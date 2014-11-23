@@ -149,7 +149,8 @@ You can verify this by right-clicking 'This PC' in the windows explorer sidebar,
 Then click 'Advanced system settings' on the left in the window that shows up. 
 Click the button under the three sections, called 'Environment Variables...'. 
 Then 'Edit...' the PATH variable and make sure that the path to the folder where you've installed Python to is in there. 
-Mine (using C:\Python27) looks like this:
+For me that's 'C:\Python27'. 
+Here is what my PATH looks like:
 C:\Program Files (x86)\CMake\bin;C:\Python27;C:\MinGW\bin
 
 ###New project
