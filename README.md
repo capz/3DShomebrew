@@ -10,7 +10,7 @@ This project has two purposes:
 
 A basic knowledge of programming is needed.
 It's in the public domain and all contributions / translations are welcome!<br>
-You can also discuss those projects on [reddit](https://github.com/xem/3DShomebrew) and [GBAtemp](https://gbatemp.net/threads/toolbox-and-tutorial-how-to-use-ninjhax-and-make-your-own-homebrews.374693/).
+You can also discuss this project on [reddit](http://www.reddit.com/r/3DS/comments/2n3cia/a_complete_3ds_homebrew_tutorial/) and [GBAtemp](https://gbatemp.net/threads/toolbox-and-tutorial-how-to-use-ninjhax-and-make-your-own-homebrews.374693/).
 Thanks to [smealum](http://smealum.net) for his [Ninjhax](http://smealum.net/ninjhax), [ctrulib](https://github.com/smealum/ctrulib) and [hbmenu](https://github.com/xem/3ds_hb_menu) projects.<br>
 Authors: [xem](http://twitter.com/MaximeEuziere), octopuserectus.<br>
 Please note that this project is still in a very early stage.
@@ -41,9 +41,9 @@ Here are the tools being developed for this project:
 
 ##Is it legal?
 
-Yes, reverse-engineering a video game console and make homebrew software for it is 100% legal.<br>
+Yes, reverse-engineering a video game console and making homebrew software for it is 100% legal.<br>
 The only thing that is illegal is piracy.<br>
-This project doesn't encourage you to pirate 3DS games (which is impossible using Ninjhack), or use it to emulate older consoles like NES or SNES (unless you have a copy of the games you emulate).<br>
+This project doesn't encourage you to pirate 3DS games (which is impossible using NINJHAX), or use it to emulate older consoles like NES or SNES (unless you have a copy of the games you emulate).<br>
 This project is only here to help you develop homebrews, so don't worry and have fun!
 
 ##Setup
@@ -58,7 +58,7 @@ or <br>
 - An SD / microSD card reader.
 - A copy of the 3DS game "Cubic Ninja" (new or used). 
 
-Note: Gateway 3DS can also play homebrews, but only in .3ds and .cia formats. This tutorial will focus on .3dsx homebrews, playable with Ninjhack + hbmenu.
+Note: Gateway 3DS can also launch homebrews, but only in .3ds and .cia formats. This tutorial will focus on .3dsx homebrews, launchable with Ninjhack + hbmenu.
 
 
 ###Computer setup
@@ -91,9 +91,9 @@ To uninstall Ninjhack (or install it on another console), you need to delete you
 
 ###Homebrew installation
 
-Two files are needed for a 3DS homebrew to be playable with Ninjhack: a *.3dsx file and a *.smdh file.
+Two files are needed for a 3DS homebrew to be launchable with Ninjhack: a *.3dsx file and a *.smdh file.
 
-If you want to play homebrews on your console, or test your own builds easily, you can use your computer to place them in the "3ds" folder of your SD / microSD card.
+If you want to launch homebrews on your console, or test your own builds easily, you can use your computer to place them in the "3ds" folder of your SD / microSD card.
 
 Note: you can create subfolders in your 3ds folder to organize your homebrews.
 
@@ -110,7 +110,7 @@ You can also upload them directly using wi-fi:
 
 ###Where can we find 3DS homebrews?
 
-Here are some sites listing 3DS homebrews. Most of them will need to be built with ctrulib to be playable with hbmenu.
+Here are some sites listing 3DS homebrews. Most of them will need to be built with ctrulib to be launchable with hbmenu.
 
 - [3Dbrew](http://www.3dbrew.org/wiki/Homebrew_Applications)
 - [Nintendomax](http://www.nintendomax.com/portal.php?&page_id=3)
@@ -142,7 +142,13 @@ Let's go back to our ctrulib/template folder.
 
 You can try to build all ctrulib examples and run them on your 3DS.
 
-***Sadly, I can't manage to build the "gpu" example (it says "python: command not found") nor the "httpd" example ("implicit declaration of function"). If someone knows how to fix that... :)***
+If you are getting the "python: command not found" error, the make sure you've added python to your PATH.<br>
+You can verify this by right-clicking 'This PC' in the windows explorer sidebar, and selecting 'Properties'.<br>
+Then click 'Advanced system settings' on the left in the window that shows up.<br>
+Click the button under the three sections, called 'Environment Variables...'.<br>
+Then 'Edit...' the PATH variable and make sure that the path to the folder where you've installed Python to is in there.<br>
+For example: ````'...;C:\Python27;...'````.
+  
 
 If you are getting the "python: command not found" error, the make sure you've added python to your PATH. 
 You can verify this by right-clicking 'This PC' in the windows explorer sidebar, clicking 'Properties'. 
@@ -157,7 +163,7 @@ C:\Program Files (x86)\CMake\bin;C:\Python27;C:\MinGW\bin
 
 To start developing your own homebrew:
 
-- Make a copy of the template folder, place it where you want, and give it a name. I'll use "tuto" (it is advisable to only use letters, numbers, -, or _ just to avoid problems with the build tools.
+- Make a copy of the template folder, place it where you want, and give it a name. I'll use "tuto" (it is advisable to only use letters, numbers, -, or _ just to avoid problems with the build tools).
 - Add a 48x48px icon.png file. Here's an example that you can download, use and edit freely:
 
 <a href="http://img.ctrlv.in/img/14/11/22/5470cab56bf39.png"><img src="http://img.ctrlv.in/img/14/11/22/5470cab56bf39.png"></a>
@@ -169,7 +175,3 @@ This part will detail how to develop a 3DS homebrew by covering all the features
 Chapters will include: display (stereoscopic or not, using bitmap or GPU, ...), sound, input, SD card access, HTTP internet access, microphone, battery, gyroscope, NFC and ... God knows what.
 
 Coming soon!
-
-<br><br><br><br><br><br><br><br><br>
-
-<img src="http://counter2.allfreecounter.com/private/freecounterstat.php?c=a27b0d262d446ce34138027e7b961653">
