@@ -409,6 +409,22 @@ Result 	GX_SetCommandList_First (u32 *gxbuf, u32 *buf0a, u32 buf0s, u32 *buf1a, 
 ````
 
 ###User Input/HID
+####Button Values
+````
+KEY_A, KEY_B, KEY_X, KEY_Y
+KEY_L, KEY_R, KEY_ZL, KEY_ZR 	// ZL+ZR are New3DS-Only
+KEY_SELECT, KEY_START 	
+KEY_DRIGHT, KEY_DLEFT, KEY_DUP, KEY_DDOWN 	
+KEY_TOUCH 	
+KEY_CSTICK_RIGHT, KEY_CSTICK_LEFT, KEY_CSTICK_UP, KEY_CSTICK_DOWN //KEY_CSTICK are New3DS-Only
+KEY_CPAD_RIGHT, KEY_CPAD_LEFT, KEY_CPAD_UP, KEY_CPAD_DOWN
+KEY_UP, KEY_DOWN, KEY_LEFT, KEY_RIGHT // Work with both the Circle pad and D-pad 
+````
+You can use these values to check if certain buttons are pressed, held, or released like so:
+hidScanInput();
+if(hidKeysHeld() & KEY_A) {
+   //your code when A button is held down
+}
 
 ####Functions
 
