@@ -1,4 +1,4 @@
-#3DS homebrew development tutorial
+#3DS homebrew development tutorials
 
 ##Summary
 - [Is it legal?](https://github.com/xem/3DShomebrew/blob/gh-pages/tutorial.md/blob/gh-pages/tutorial.md#is-it-legal)
